@@ -1,37 +1,31 @@
-# Speech Support App Website
+# つたえるボタン Website
 
-Androidアプリ「Speech Support App」の公開用Webサイトです。  
-GitHub Pagesでの公開を前提に、HTML + CSSのみの静的構成で作成しています。
+GitHub Pages で公開する、つたえるボタン（Speech Support App）の静的サイトです。
 
-## サイトの目的
-
-- アプリ紹介ページの提供
-- プライバシーポリシーの明示
-- 利用規約の明示
-- サポート情報（FAQ）の提供
-
-## 対象アプリ概要
-
-Speech Support App は、発語が困難な方の意思伝達を支援するオフライン音声読み上げアプリです。  
-利用者はボタン操作で文章を読み上げでき、家族がサポートモードでボタン内容や表示設定を管理できます。
-
-## ページ構成
+## 公開ページ
 
 - `index.html` : アプリ紹介
-- `privacy.html` : プライバシーポリシー
-- `terms.html` : 利用規約
-- `support.html` : サポート / FAQ
-- `style.css` : 共通スタイル
+- `privacy/index.html` : プライバシーポリシー
+- `terms/index.html` : 利用規約
+- `support/index.html` : サポート / FAQ
 
-## 運用方針
+## アセット
 
-- アプリの問題報告や改善提案は、GitHub Issueを利用してください。  
-  https://github.com/kira-apps/speech-support-app/issues
+- `assets/css/style.css` : 全ページ共通のスタイル
 
-## 公開方法（GitHub Pages）
+## 運用ドキュメント
 
-1. このリポジトリを GitHub に push
-2. GitHub の `Settings` → `Pages` を開く
-3. `Build and deployment` で `Source: Deploy from a branch` を選択
-4. 公開対象ブランチ（例: `main`）とルート（`/ (root)`）を指定して保存
+- `SITE_GUIDE.md` : サイト構成、編集タイミング、文面ルール
 
+## GitHub Pages での公開方針
+
+- トップページはルートの `index.html`
+- 下位ページは `privacy/`、`terms/`、`support/` のようにディレクトリ単位で管理
+- CSS や画像などの共通ファイルは `assets/` 配下に集約
+
+## 更新時のチェック
+
+- 各ページのナビゲーションリンクが開けるか
+- CSS の相対パスが正しいか
+- ページタイトルと説明文が内容に合っているか
+- GitHub Pages 上で URL が想定どおりか
